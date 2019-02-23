@@ -5,13 +5,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>techno  fest 2019</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   
+    <link rel="stylesheet" href="./assets/css/main.css" >
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" >
+    <link rel="stylesheet" href="./assets/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/data.js" ></script>
+<script src="./assets/popper.min.js" ></script>
+<script src="./assets/bootstrap.min.js"></script>
+<style>
+    /* Make the image fully responsive */
+  
+    </style>
+    
 </head>
 <body>
+ 
+   <div class="popupwindow">
+     <br>
+     <div class="row">
+       <div class="col-md-3"></div>
+       <div class="col-md-6">
+          <div class="card popcard">
+              <div class="closePopUp">&times;</div>
+              <div class="card-header popupcheader"></div>
+              <div class="card-body ">
+                  <div class="card-title popctitle"></div>
+                  <div class="card-text popupctext">
+                         </div>
+              </div>
+              <div class="card-footer popcfooter">
+                  <button class="btn btn-success btn-lg">Register &#8594;</button>
+              </div>
+          </div>
+       </div>
+       <div class="col-md-3"></div>
+     </div>
+
+   </div>
+     
+   <div class="container">
+     
+      <div class="navbartab insta-back">
+          <ul class="nav nav-tabs text-light">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html#home"> <i class="fa fa-home" aria-hidden="true"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#events"><i class="fa fa-calendar" aria-hidden="true"></i>Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#gallery"><i class="fa fa-folder-open" aria-hidden="true"></i>Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#aboutus">About us</a>
+              </li>
+          
+            </ul>
+               </div>
+     <div class="jubotron">
+      <div id="head_carouel" class="carousel slide " data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#head_carouel" data-slide-to="0" class="active"></li>
+            <li data-target="#head_carouel" data-slide-to="1"></li>
+            <li data-target="#head_carouel" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner slide-show">
+            <div class="carousel-item active">
+              <img src="./assets/image/poster/chicago.jpg" alt="Los Angeles" width="1100" height="500">
+              <div class="carousel-caption">
+                <h3>some tage line</h3>
+                <p>We had such a great time in ITS</p>
+              </div>   
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/image/poster/la.jpg" alt="Chicago" width="1100" height="500">
+              <div class="carousel-caption">
+                  <h3>some tage line</h3>
+                  <p>We had such a great time in ITS</p>
+              </div>   
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/image/poster/ny.jpg" alt="New York" width="1100" height="500">
+              <div class="carousel-caption">
+                  <h3>some tage line</h3>
+                  <p>We had such a great time in ITS</p>
+              </div>   
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#head_carouel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#head_carouel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        </div>
+     </div>
+   <div class="container">
+      <h2 class="event-heading headingtab insta-back text-light" id="events">Events</h2>
+     <div class="row">
+       <div class="grule insta-back">
+         <p>
+        <h6 class="text text-center text-light">General Guidelines</h6>
+       <i class="fa fa-hand-o-right" aria-hidden="true"></i> There is no participation fee<br>
+       <i class="fa fa-hand-o-right" aria-hidden="true"></i> The content is open for all Graduate and Post Graduate students of all streams<br>
+       <i class="fa fa-hand-o-right" aria-hidden="true"></i> Students must carry their valid College identity card or authentication letter issued by the institute<br>
+       <i class="fa fa-hand-o-right" aria-hidden="true"></i> A team can participate in any number of events subject to the events are not in parallel<br>
+       <i class="fa fa-hand-o-right" aria-hidden="true"></i> Rules for all the events are available on the website and decision of the judges will be final & binding<br>
+        </p>
+       </div>
+     <div class="col-md-6">
+       
+        <div class=" insta-back event-cat text-light"><ul class="list">
+            <h4 class="text-center text-light text-bold">13/03/2019</h4>
+            <div class="list-item1 list-item text-left" id="1">BUSINESS QUIZ</div>
+            <div class="list-item1 list-item text-left " id="2">Debate</div>
+            <div class="list-item1 list-item text-left" id="3">AD-MAD SHOW</div>
+            <div class="list-item1 list-item text-left" id="4">CYBER GAME (Individual)</div>
+            <div class="list-item1 list-item text-left" id="5"> CYBER GAME (Counter Strike 1.6)</div>
+            <div class="list-item1 list-item text-left" id="6">SOLO DANCE</div>
+            <div class="list-item1 list-item text-left" id="7">Rangoli</div> 
+            <div class="list-item1 list-item text-left" id="8">Face Painting</div>
+            <div class="list-item1 list-item text-left" id="9">Web Designing</div>
+            <div class="list-item1 list-item text-left" id="10">Poster  Making</div>
+            <div class="list-item1 list-item text-left" id="11">Project Presentation</div> 
+            <div class="list-item1 list-item text-left" id="12">Heena</div>
+          </div>
+        
+      
+     </div>
+     <div class="col-md-6">
+        <div class=" insta-back event-cat text-light">
+          <h4 class="text-center text-light text-bold">14/02/2019</h4>
+        <div class="list-item1 list-item text-right" id="1">T-SHIRT PAINTING</div>
+        <div class="list-item1 list-item text-right" id="2">NUKKAD NATAK</div>
+        <div class="list-item1 list-item text-right" id="3">FASHION BASH</div>
+        <div class="list-item1 list-item text-right" id="4">NUKKAD NATAK</div>
+        <div class="list-item1 list-item text-right" id="5"> GROUP DANCE</div>
+        <div class="list-item1 list-item text-right" id="6">TREASURE HUNT</div>
+        <div class="list-item1 list-item text-right" id="7">WAR OF BANDS</div> 
+        <div class="list-item1 list-item text-right" id="8">C-Programming</div>
+        <div class="list-item1 list-item text-right" id="9">Solo Singing</div>
+        <div class="list-item1 list-item text-right" id="10">Blind Coding</div>
+        <div class="list-item1 list-item text-right" id="11">IT- Quiz</div> 
+        <div class="list-item1 list-item text-right" id="12">Java Programming Contest</div> 
+        <!-- <div class="list-item1 list-item text-right" id="12">Fastest Finger First</div>  -->
+
+
+
+        
+        
+
+      </div>
+     </div>
+    </div>
+     
+   </div>
+   <div class="container">
+      <H2 class="gallery-heading headingtab insta-back text-light" id="gallery">gallery</H2> 
+   <div class="row">
+     
+   <a href="gallery.html">  <div class="col-md-12 gallery"> 
+       <div class="row">
+         <div class="col-md-2">
+            <img class="img img-thumbnail" src="/assets/image/teachersday/40808583_10156647449598482_3765239541678473216_n.jpg" alt="img">
+         </div>
+         <div class="col-md-2">
+           <img class="img img-thumbnail" src="/assets/image/teachersday/1.1..JPG" alt="img">
+         </div>
+         <div class="col-md-2">
+            <img class="img img-thumbnail" src="/assets/image/teachersday/40967367_10156647467008482_1001130454058795008_n.jpg" alt="img">
+         </div>
+         <div class="col-md-2"><img class="img img-thumbnail" src="/assets/image/teachersday/40973650_10156647465568482_8276000228151132160_n.jpg" alt="img"></div>
+         <div class="col-md-2">
+            <img class="img img-thumbnail" src="/assets/image/teachersday/41058165_10156647450328482_3160924964387815424_n.jpg" alt="img">
+         </div>
+         <div class="col-md-2">
+            <img class="img img-thumbnail" src="/assets/image/teachersday/41068542_10156647450598482_8346261864434368512_n.jpg" alt="img">
+         </div>
+       </div>
+      </div>
+      <div class=" insta-back more-gallery-btn togallery text-light">More images &#8594;</div>
+     </div>
+    </a>
+     
+   </div>
+   <div class="container">
+     <h2 class="headingtab insta-back text-light" id="aboutus">About us</h2>
+      <div class="row">
+        <div class="col-md-12 aboutustxt">
+           <p class="text-dark text-bold"> I.T.S - The Education Group is a 23 years old leading educational group of the country. Its various programmes are NBA accredited & NAAC (A-Grade) accredited. ISO 9001:2008 certified group offers 20 courses to its 8000 students in its 8 Institutes spread over 4 campuses, endowed with state-of-the-art infrastructure, all modern facilities and more than 700 distinguished faculty members.</p>
+              <p class="text-dark"> I.T.S - The Education Group is a renowned and established educational group offering programmes in Management, IT, Dental, Engineering, Pharmacy, Biotechnology and Physiotherapy. PGDM programme offered by I.T.S is equivalent to MBA as certified by the Association of Indian University (AIU) which is a rare recognition given to any such programmes in India.</p>
+                  <p class="text-dark"> I.T.S supplements education with its CSR activities offering help, care and guidance to the downtrodden and unprivileged segments of the society. I.T.S-The Education Group offers nonprofit medical care to society through its two, 100 bedded fully equipped multi-speciality hospitals</p>
+        </div>
+      </div>
+
+   </div>
+   <div class="container  insta-back footer">
+   <div class="row">
+<div class="col-md-8">
+  <div class="contact">
+    Contact us:- 
+    <hr>
+    <i class="fa fa-phone" aria-hidden="true"></i>0120 - 2811000/111/112<br>
+   +91-8447744041/42/43/44/47
+   <br>
+  <i class="fa fa-envelope" aria-hidden="true"></i>itsmn@its.edu.in<br>
+   admissions.mn@its.edu.in
+  </div>
+</div>
+<div class="col-md-4">
+  <div class=" social-tab">
+   
+      <i class="fa fa-facebook-square fa-3x facebook" aria-hidden="true"></i>
     
+    
+         <i class="fa fa-twitter-square fa-3x twitter" aria-hidden="true"></i>
+  
+    
+        <i class="fa fa-linkedin-square fa-3x linked" aria-hidden="true"></i>
+   
+    
+        <i class="fa fa-youtube-square fa-3x youtube" aria-hidden="true"></i>
+    
+  </div>
+</div>
+
+   </div> 
+   <h5 class=" cpy text-light">
+      &copy;I.T.S 2019 Mohan nagar Gazhaibad
+    </h5>
+  </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
