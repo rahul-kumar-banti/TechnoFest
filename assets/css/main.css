@@ -1,4 +1,5 @@
-
+@import "bootstrap.min.css";
+@import "font-awesome.min.css";
 .navbartab
 {
     height:40px;
@@ -40,6 +41,9 @@
 }
 .insta-back,.card
 {
+    
+    /* background: linear-gradient(to right, #c0392b, #8e44ad); */
+    /* background:linear-gradient(to right, #12c2e9, #c471ed, #f64f59); */
     background:linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
 }
 .aboutustxt
@@ -90,7 +94,7 @@
 }
 .youtube
 {
-    color:rgb(136, 14, 14);
+    color:rgb(156, 9, 9);
 }
 .facebook
 {
@@ -179,6 +183,40 @@ margin-right: 5%;
 text-shadow:0px 0px 14px #130f40;
 
 }
+.notice-slider
+{
+    width:100%;
+    height: 30px;
+    position: absolute;
+    z-index: 3333;
+    bottom: 0px;
+    background: rgba(209, 198, 198, 0.541);
+
+}
+.txt-alert{
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color:white;
+}
+.txt-marquee
+{
+    
+    color:red;
+    margin-top:5px;
+    text-transform: capitalize;
+    /* text-shadow: 1px 1px 7px rgb(216, 5, 86); */
+    font-weight:300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.notice-alert
+{
+    width:15%;
+    height:100%;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    position: relative;
+    z-index: 3334;
+}
 .grule
 {
     
@@ -227,7 +265,12 @@ text-shadow:0px 0px 14px #130f40;
     .social-tab{
         float: left;
     }
+    .text-right{
+        text-align: left;
+        margin-left:0px;
+    }
     *{
         padding-right: 5px;
     }
+    
 } 

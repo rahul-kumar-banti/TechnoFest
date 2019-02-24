@@ -1,0 +1,43 @@
+.gallery-thumb
+{
+    overflow:hidden;
+
+}
+.ing-thumb
+{
+    cursor: pointer;
+}
+.model
+{
+    width: 100%;
+}
+.modal-dialog
+{
+width: 90%;
+}
+.leftmove{
+    height:50%;
+    width:50px;
+    position: absolute;
+    left:0%;
+    top: 30%;
+    cursor: pointer;
+    z-index: 4444;
+    background: rgba(209, 198, 198, 0.541);
+    z-index: inherit;
+}
+.rightmove
+{
+    height:50%;
+    width:50px;
+    position: absolute;
+    right:0%;
+    z-index: 4444;
+    top:30%;
+    cursor: pointer;
+    background: rgba(209, 198, 198, 0.541);
+}
+.arrow
+{
+    margin-top:90%;
+}
