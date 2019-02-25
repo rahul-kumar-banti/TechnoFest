@@ -15,17 +15,26 @@ $(document).ready(function () {
  
   $(".list-item").click(function(){
       var clickedevent=$(this).attr("id");
+      if(clickedevent=='12a'){
+        clickedevent=1;
+      }
       $(".popcfooter").show();
       $(".popctitle").show();
       $(".rightmove").hide();
       $(".leftmove").hide();
        $(".popupcheader").html(eventItem[clickedevent-1].eventheader);
-      $(".popctitle").html("<span class='badge badge-success'>Register now &#8594;</span>"+eventItem[clickedevent-1].eventtitle);
+      $(".popctitle").html("<a href='#register'><span class='badge badge-primary btn btn-sm '>Register now</span></a>"+eventItem[clickedevent-1].eventtitle);
       $(".popupctext").html(eventItem[clickedevent-1].eventdetail);
       
     $(".popupwindow").show();
   
 
+  });
+  $(".text-left-l").append("<i class='fa fa-plus plus'aria-hidden='true'></i>");
+  $(".text-right-t").append("<i class='fa fa-plus plus'aria-hidden='true'></i>");
+
+  $(".register").click(function(){
+    // window.location.href="https://google.co.in";
+    window.open("https://google.co.in","__blank");
   })
-  
 });

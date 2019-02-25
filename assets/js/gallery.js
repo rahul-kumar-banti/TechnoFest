@@ -6,7 +6,7 @@ var currentImgid=0;
 var htmtxt="";
 for(i=0;i<gimage.length;i++){
 
-    $(".gallery-thumb").append("<div class='col-md-2' data-toggle='modal' data-target='#myModal'><img class='img img-thumbnail ing-thumb' id="+i+" src='./assets/image/teachersday/"+gimage[i]+"'></div>");
+    $(".gallery-thumb").append("<div class='col-md-2 imgdiv imgzoom' ><img class='img img-thumbnail ing-thumb' id="+i+" src='./assets/image/teachersday/"+gimage[i]+"'></div>");
 }
 $(".ing-thumb").click(function(){
     var im=$(this).attr("src");
@@ -47,4 +47,10 @@ $(".rightmove").click(function(){
     }
     currentImgid++;
 });
+// $(".imgdiv").mouseenter(function () { 
+//     $(this).addClass("imgzoom");
+// });
+// $(".imgdiv").mouseleave(function () { 
+//     $(this).removeClass("imgzoom");
+// });
 });

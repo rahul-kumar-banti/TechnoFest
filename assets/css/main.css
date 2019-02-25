@@ -1,5 +1,12 @@
 @import "bootstrap.min.css";
 @import "font-awesome.min.css";
+.insta-back,.card
+{
+    
+
+    background:linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+}
+/* nav  style css */
 .navbartab
 {
     height:40px;
@@ -10,18 +17,9 @@
     /* clip-path: polygon(0 0, 100% 0%, 100% 99%, 18% 100%); */
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 11% 98%);
     z-index: 2222;
-    box-shadow: 10px 10px 5px grey;
-    /* box-shadow:-2px -2px 10px #bdc3c7; */
+    box-shadow: 0px 0px 5px grey;
     
-}
-.event-cat
-{
-    /* margin:20px 0px; */
     
-    color: #ecf0f1;
-    margin-bottom:10px;
-    
-    box-shadow: 0px 0px 10px gray;
 }
 .nav-link{
     color: #ecf0f1;
@@ -30,33 +28,52 @@
 .nav-link:hover{
     color: #ecf0f1;
 }
-.togallery
+/* notice slider nav bottom */
+.notice-slider
 {
+    width:100%;
+    height: 30px;
     position: absolute;
+    z-index: 3333;
     bottom: 0px;
-    right: 0px;
-    padding: 2px;
-    opacity: 0.9;
-    box-shadow: 0px 0px 10px gray;
+    background: rgba(209, 198, 198, 0.541);
+
 }
-.insta-back,.card
+.txt-alert{
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color:white;
+}
+.txt-marquee
 {
     
-    /* background: linear-gradient(to right, #c0392b, #8e44ad); */
-    /* background:linear-gradient(to right, #12c2e9, #c471ed, #f64f59); */
-    background:linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+    color:red;
+    margin-top:5px;
+    text-transform: capitalize;
+    /* text-shadow: 1px 1px 7px rgb(216, 5, 86); */
+    font-weight:300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.aboutustxt
+.notice-alert
 {
-    background: rgba(133, 126, 126, 0.253);
-    font-size: 16px;
-    box-shadow: 0px 0px 10px gray;
+    width:15%;
+    height:100%;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    position: relative;
+    z-index: 3334;
 }
-.footer
+/* event style section */
+.event-cat
 {
-    margin-top: 20px;
+ 
+    color: #ecf0f1;
+    margin-bottom:10px;
     box-shadow: 0px 0px 10px gray;
+    padding-bottom: 30px;
+    padding-left: 15%;
 }
+/* gallery css */
 .headingtab
 {
     text-align: center;
@@ -65,6 +82,7 @@
     box-shadow: 0px 0px 10px gray;
     clip-path: polygon(0% 15%, 29% 27%, 15% 0%, 85% 0%, 68% 30%, 100% 15%, 100% 85%, 68% 74%, 85% 100%, 15% 100%, 31% 74%, 0% 85%);
 }
+/* contact us tab css */
 .contact
 {
     margin-left: 20px;
@@ -161,7 +179,9 @@ position: relative;
 .list-item1{
     background: rgba(209, 198, 198, 0.541);
     height:24px;
+    width:70%;
     margin-top: 3px;
+    text-align: center;
     border:2px inset gray;
     /* border-radius: 25px; */
     padding-left: 10px;
@@ -170,59 +190,36 @@ position: relative;
     box-shadow: 0px 0px 10px black;
     border:2px double  rgba(0, 255, 55, 0.808);;
 }
-.text-left{
-text-align: left;
+.list-item1:hover>.plus
+{
+    color: rgba(20, 77, 20, 0.76);
+    text-shadow: 0px 0px 0px gray;
+}
+.text-left-l{
+/* text-align: left; */
 padding-left: 5%;
 text-shadow:0px 0px 14px #130f40;
 }
-.text-right
+.text-right-t
 {
-text-align: right;
-padding-right: 5%;
-margin-right: 5%;
+
+margin-left: 13%;
 text-shadow:0px 0px 14px #130f40;
 
 }
-.notice-slider
-{
-    width:100%;
-    height: 30px;
-    position: absolute;
-    z-index: 3333;
-    bottom: 0px;
-    background: rgba(209, 198, 198, 0.541);
 
-}
-.txt-alert{
-    font-size: 1.4em;
-    font-weight: bolder;
-    text-transform: capitalize;
-    color:white;
-}
-.txt-marquee
+.plus
 {
-    
-    color:red;
-    margin-top:5px;
-    text-transform: capitalize;
-    /* text-shadow: 1px 1px 7px rgb(216, 5, 86); */
-    font-weight:300;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.notice-alert
-{
-    width:15%;
-    height:100%;
-    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-    position: relative;
-    z-index: 3334;
+    float:right;
+    margin-top: 3px;
+
 }
 .grule
 {
     
     width:300px;
     border:1px solid white;
-    position: absolute;
+    
     left:37%;
     color: aliceblue;
     font-size: 14px;
@@ -232,9 +229,16 @@ text-shadow:0px 0px 14px #130f40;
     padding: 10px;
     box-shadow: 0px 0px 20px gray;
 }
-.fa-hand-o-right
+.aboutustxt
 {
-    color:#eb4d4b;
+    background: rgba(133, 126, 126, 0.253);
+    font-size: 16px;
+    box-shadow: 0px 0px 10px gray;
+}
+.footer
+{
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px gray;
 }
 @media only screen and (max-width: 600px) {
 
@@ -260,17 +264,36 @@ text-shadow:0px 0px 14px #130f40;
     .grule{
         position: relative;
         left:0%;
+        margin-left: 5%;
+        margin-right: 5%;
         width: 100%;
     }
     .social-tab{
         float: left;
     }
-    .text-right{
+    .text-right-t{
         text-align: left;
         margin-left:0px;
     }
-    *{
-        padding-right: 5px;
+    .list-item1{
+        width:100%;
+        padding-left: 0%;
     }
+    .text-left-l,.text-right-t{
+        margin-left:0%;
+    }
+    .event-cat{
+        padding-left:0%;
+    }
+
     
 } 
+@media only screen and (min-width: 1000px){
+.grule{
+    
+    width:300px;
+    position: absolute;
+    top:20%;
+}
+
+}
