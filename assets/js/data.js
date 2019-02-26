@@ -1,3 +1,6 @@
+var gimage=['1.1..JPG','1.1..JPG','1.1..JPG','1.1..JPG','1.1..JPG','1.1..JPG']; 
+
+
 eventItem=[
     {"eventheader":"BUSINESS QUIZ",
 "eventtitle":"<h6>Elimination Round</h6><ul><li>	There can only be 2 people in the team</li>"+

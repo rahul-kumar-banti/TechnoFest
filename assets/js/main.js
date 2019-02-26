@@ -35,6 +35,6 @@ $(document).ready(function () {
 
   $(".register").click(function(){
     // window.location.href="https://google.co.in";
-    window.open("https://google.co.in","__blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5YY2XB4mA44dUOB5VK5mZ86uuCrD4KKKjY9vpSB5g3CE2Hw/viewform","__blank");
   })
 });
